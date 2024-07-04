@@ -24,9 +24,40 @@ public class Main {
 
         }
     }
+    static void Even_Odd_Positive_and_Negative(){
+        int evenNumber=0;
+        int oddNumber=0;
+        int positiveNumber=0;
+        int negativeNumber=0;
+        int num;
+        Scanner scan=new Scanner(System.in);
+        int counter=scan.nextInt();
+        for (int i=1;i<=counter;i++){
+            num=scan.nextInt();
+           if(num % 2 == 0){
+               evenNumber++;
 
+           }else{
+               oddNumber++;
+
+           }
+            if(num>0){
+                positiveNumber++;
+            }else if(num<0) {
+                negativeNumber++;
+            }
+        }
+
+        System.out.println("Even: "+evenNumber);
+        System.out.println("Odd: "+oddNumber);
+        System.out.println("Positive: "+positiveNumber);
+        System.out.println("Negative: "+negativeNumber);
+
+
+    }
     public static void main(String[] args) {
 //        oneTwoN();
-        EvenNumbers();
+//        EvenNumbers();
+        Even_Odd_Positive_and_Negative();
     }
 }
