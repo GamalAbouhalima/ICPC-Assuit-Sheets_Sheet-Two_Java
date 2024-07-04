@@ -69,10 +69,29 @@ public class Main {
 
         }
     }
+    static void Max(){
+        Scanner scan=new Scanner(System.in);
+        int counter;
+        int max=0;
+        counter=scan.nextInt();
+        for (int i=1;i<=counter;i++){
+            int num=scan.nextInt();
+             if (i == 1){
+                 max=num;
+             }
+             if(num>max){
+                 max=num;
+             }
+
+        }
+        System.out.println(max);
+
+    }
     public static void main(String[] args) {
 //        oneTwoN();
 //        EvenNumbers();
 //        Even_Odd_Positive_and_Negative();
-        Fixed_Password();
+//        Fixed_Password();
+        Max();
     }
 }
