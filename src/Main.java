@@ -87,11 +87,20 @@ public class Main {
         System.out.println(max);
 
     }
+    static void Multiplication_table(){
+        Scanner scan=new Scanner(System.in);
+        int n=scan.nextInt();
+        for (int i=1;i<=12;i++){
+            int res=n*i;
+            System.out.println(n+" * "+i+" = "+res);
+        }
+    }
     public static void main(String[] args) {
 //        oneTwoN();
 //        EvenNumbers();
 //        Even_Odd_Positive_and_Negative();
 //        Fixed_Password();
-        Max();
+//        Max();
+        Multiplication_table();
     }
 }
