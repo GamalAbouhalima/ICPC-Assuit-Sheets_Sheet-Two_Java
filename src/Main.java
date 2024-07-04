@@ -55,9 +55,24 @@ public class Main {
 
 
     }
+    static void  Fixed_Password(){
+        int password;
+        Scanner scan=new Scanner(System.in);
+        while (true){
+            password=scan.nextInt();
+            if (password==1999){
+                System.out.println("Correct");
+                break;
+            }else {
+                System.out.println("Wrong");
+            }
+
+        }
+    }
     public static void main(String[] args) {
 //        oneTwoN();
 //        EvenNumbers();
-        Even_Odd_Positive_and_Negative();
+//        Even_Odd_Positive_and_Negative();
+        Fixed_Password();
     }
 }
